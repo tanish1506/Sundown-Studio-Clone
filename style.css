@@ -1,0 +1,751 @@
+@font-face {
+    font-family: tiger;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: tiger;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: tiger;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+
+@font-face {
+    font-family: tiger2;
+    src: url(./NeueHaasDisplayThin.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "tiger";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+.main {
+    position: relative;
+    overflow-x: hidden;
+    z-index: 10;
+
+
+}
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0vw 2vw;
+}
+
+nav {
+    padding: 2.5vw 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+nav h3{
+    display: none;
+    
+}
+.nav-part2 h4 {
+    position: relative;
+    padding: 10px 18px;
+    border: 1px solid #0000009e;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #000;
+    transition: all ease 0.3s;
+    overflow: hidden;
+}
+
+.nav-part2 a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    z-index: 9;
+
+}
+
+.nav-part2 h4 :hover {
+    color: #fff;
+}
+
+.nav-part2 h4::after {
+    content: "";
+    transition: all ease 0.3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    left: 0;
+    border-radius: 30px;
+    bottom: -100%;
+    color: white;
+}
+
+.nav-part2 h4:hover::after {
+    bottom: 0;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.center {
+    width: 100%;
+    height: 70vh;
+    padding: 2.5vw 0vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000009e;
+    padding-bottom: 2vw;
+}
+
+.left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2.2vw;
+    font-weight: 500;
+}
+
+.center h1 {
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: end;
+    position: relative;
+    z-index: 9;
+}
+
+.page1 video {
+    margin-top: 5vw;
+    width: 100%;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.hero-shape {
+    position: absolute;
+    width: 45vw;
+    height: 34vw;
+    right: 0;
+    top: 80vh;
+}
+
+.hero1 {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: #FE320C;
+    height: 100%;
+    width: 100%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+.hero2 {
+    border-radius: 50%;
+    background: linear-gradient(#FE320C, #fe3f0a);
+    position: absolute;
+    height: 25vw;
+    width: 25vw;
+    filter: blur(25px);
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.hero3 {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(#FE320C, #fe3f0a);
+    height: 25vw;
+    width: 25vw;
+    filter: blur(25px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%)
+    }
+
+    to {
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%)
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+
+.page2 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 6vw 0vw;
+    background-color: #EFEAE3;
+    position: relative;
+}
+
+.moving-txt {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.moving-txt::-webkit-scrollbar {
+    display: none;
+}
+
+.moving-txt h1 {
+    font-size: 8vw;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.con {
+    animation: mover 13s linear infinite forwards;
+    white-space: nowrap;
+    display: inline-block;
+
+}
+
+.gola {
+    display: inline-block;
+    width: 4.5vw;
+    height: 4.5vw;
+    background-color: #fe3f0a;
+    border-radius: 50%;
+    margin: 1vw 2.5vw;
+}
+
+@keyframes mover {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.page2-bottom {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 3vw 6vw;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+}
+
+.page2-bottom h1 {
+    font-size: 4vw;
+    width: 60%;
+}
+
+.bottom-part2 {
+    width: 23%;
+    position: relative;
+    z-index: 9;
+
+}
+
+.bottom-part2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    margin-bottom: 3vw;
+}
+
+.bottom-part2 p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.4vw;
+}
+
+.gooeyy {
+    background: linear-gradient(#FE320C, #fe750c);
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    filter: blur(25px);
+    animation-name: anime3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.gooeyy1 {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes anime3 {
+    from {
+        transform: translate(5%, -5%) skew(0);
+    }
+
+    to {
+        transform: translate(-5%, 5%) skew(-5deg);
+    }
+}
+.div{
+    display: none;
+    gap: 10px;
+    font-weight: 200;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fe3f0a;
+}
+
+
+.page3 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFEAE3;
+}
+
+.elem {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+    border-bottom: 1px solid #00000036;
+    overflow: hidden;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+.elem img{
+    display: none;
+}
+
+.elem-part2 {
+    text-align: end;
+    position: relative;
+    z-index: 9;
+}
+
+.elem-part2 h5 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.elem-part2 p {
+    color: #00000091;
+    font-size: 16px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    left: 0;
+    top: -100%;
+
+    transition: all ease 0.2s;
+}
+
+.elem:hover .overlay {
+    top: 0;
+
+}
+
+.fixed-img {
+    width: 25vw;
+    display: none;
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    border-radius: 30px;
+    position: fixed;
+    z-index: 99;
+    top: 25%;
+    left: 50%;
+}
+
+.button {
+    width: 130px;
+    height: 7vh;
+    margin-left: 3vw;
+    margin-top: 2vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.button h3 {
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    padding: 10px 15px;
+    border: 1px solid #00000036;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 200;
+}
+.button h3:hover{
+    color: #fff;
+}
+
+.overlay2{
+    width: 130px;
+    height: 7vh;
+    position: absolute;
+    border-radius: 30px;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    transition: all ease 0.4s;
+    color: #fff;
+}
+.button:hover .overlay2 {
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+
+
+.page4 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1vw 3vw;
+    background-color: #EFEAE3;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    border-radius: 30px;
+
+}
+
+.container-left {
+    width: 45%;
+    padding: 0vw 7vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-left h1 {
+    font-size: 4.5vw;
+    border-left: 1px solid #b9b9b936;
+}
+
+.container-left p {
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.h1-diff {
+    color: #504A45;
+    padding-left: 3vw;
+}
+
+.container-right {
+    width: 55%;
+}
+
+.container-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+}
+
+.slider-container {
+    width: 100vw;
+    height: 70vh;
+    padding: 0;
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.slider {
+    display: flex;
+    padding: 0vw 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    padding: 0vw 2vw;
+    width: 350px;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    border-right: 1px solid #00000036;
+}
+
+.slide p {
+    font-weight: 100;
+    width: 75%;
+    font-size: 1.1vw;
+}
+
+.page5 {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.footer {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    background-color: #000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #fff;
+}
+
+.footer h1 {
+    font-size: 23.5vw;
+    color: #fff;
+    position: relative;
+}
+
+.footer-div {
+    color: #fff;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    position: relative;
+}
+
+.footer-left h2 {
+    font-size: 2vw;
+    color: #fff;
+    font-weight: 100;
+}
+
+.footer-right {
+    width: 25%;
+}
+
+.footer-right h3 {
+    font-weight: 100;
+}
+
+.footer-right input {
+    color: #fff;
+    width: 100%;
+    margin-top: 0.6vw;
+    padding: 0.5vw;
+    font-size: 1.1vw;
+    background: none;
+    border: none;
+    color: #0000005d;
+    border-bottom: 1px solid #fffefe5d;
+    font-weight: 200;
+
+}
+
+.footer-btm {
+    height: 50vh;
+    width: 100%;
+    border-top: 1px solid #ffffff5f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+}
+
+.footer-btm h3 {
+    font-weight: 200;
+    font-size: 1.2vw;
+
+}
+
+.anim{
+    width: 100%;
+    height: 40vw;
+    position: relative;
+    display: flex;
+}
+
+.anime1 {
+    width: 75%;
+    height: 40vw;
+    top: 0;
+    left: -20%;
+    background-color: #dc2500;
+    position: absolute;
+    border-bottom-right-radius: 80%;
+    filter: blur(30px);
+    animation: animation2 4s linear infinite alternate;
+}
+
+.anime2 {
+    width: 60%;
+    height: 35vw;
+    top: 0;
+    right: 0;
+    background-color: #dc2500;
+    border-bottom-left-radius: 80%;
+    filter: blur(25px);
+    position: absolute;
+    animation: animation 4s linear infinite alternate;
+}
+
+@keyframes animation {
+    from {
+        transform: translate(10%, -5%) skew(0);
+    }
+
+    to {
+        transform: translate(0%, 0%) skew(-10deg);
+    }
+
+}
+
+@keyframes animation2 {
+    from {
+        transform: translate(10%, -5%) skew(0);
+    }
+
+    to {
+        transform: translate(-10%, 0%) skew(10deg);
+    }
+}
+
+.full-scr{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000005c;
+    position: fixed;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+.full-div1{
+    height: 50%;
+    width: 100%;
+    background-color: #EFEAE3;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 5vw;
+    padding-right: 4vw;
+    
+}
+.full-div1 h1{
+    font-size: 14vw;
+}
+.loader{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: all ease 0.6s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader h1{
+    font-size: 7vw;
+    position: absolute;
+    opacity: 0  ;
+    color: transparent;
+    background: linear-gradient(to right ,rgb(185, 130, 28),rgb(184, 54, 7));
+    -webkit-background-clip: text;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+.loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+.loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

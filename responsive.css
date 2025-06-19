@@ -1,0 +1,363 @@
+@font-face {
+    font-family: tiger;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: tiger;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: tiger;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+
+@font-face {
+    font-family: tiger2;
+    src: url(./NeueHaasDisplayThin.ttf);
+}
+
+
+@media (max-width:600px) {
+    .page1 {
+        min-height: 100vh;
+        width: 100vw;
+        padding: 0vw 0vw;
+    }
+
+    nav {
+        padding: 3vw 5vw;
+        background-color: #EFEAE3;
+
+    }
+
+    .nav-part2 {
+        display: none;
+    }
+
+    nav h3 {
+        display: block;
+        color: #000000bf;
+        border: 1px solid #00000057;
+        padding: 2vw 3vw;
+        border-radius: 20px;
+        font-weight: 200;
+        padding-left: 8vw;
+    }
+
+
+    .center {
+        width: 100%;
+        height: 60vh;
+        padding: 7vw 5vw;
+        position: relative;
+        z-index: 9;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        border-bottom: 1px solid #0000009e;
+    }
+
+    .left h3 {
+        width: 80%;
+        font-size: 5.8vw;
+        line-height: 7.2vw;
+        font-weight: 500;
+    }
+
+    .center h1 {
+        font-size: 15vw;
+        line-height: 15vw;
+        text-align: end;
+    }
+
+    .page1 video {
+        margin: 5%;
+        width: 90%;
+        height: 60vh;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px #000;
+    }
+
+    .hero-shape {
+        position: absolute;
+        width: 60vw;
+        height: 50vw;
+        right: 0%;
+        top: 62vh;
+    }
+
+    .page2 {
+        width: 100%;
+        height: 70vh;
+        padding-top: 6vw;
+        background-color: #EFEAE3;
+        position: relative;
+    }
+
+    .page2-bottom {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 6vw 6vw;
+        position: relative;
+        z-index: 9;
+        margin-top: 10vw;
+    }
+
+    .page2-bottom h1 {
+        font-size: 6vw;
+        line-height: 5vw;
+        width: 90%;
+    }
+
+    .bottom-part2 {
+        width: 80%;
+        position: relative;
+        z-index: 9;
+        padding: 8vw 0vw;
+    }
+
+    .bottom-part2 img {
+        width: 75vw;
+        height: 60%;
+        margin-bottom: 4vw;
+    }
+
+    .bottom-part2 p {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    .gooeyy {
+        width: 70vw;
+        height: 70vw;
+        top: 15%;
+        left: 50%;
+    }
+
+    .div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page3 {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #EFEAE3;
+    }
+
+    .elem {
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 0vw 5vw;
+    }
+
+    .elem img {
+        display: block;
+        width: 88vw;
+        height: 48vh;
+        border-radius: 20px;
+        object-fit: cover;
+        padding-bottom: 3vw;
+        object-position: center;
+    }
+
+    .fixed-img {
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+
+    .elem h2 {
+        font-size: 7vw;
+    }
+
+    .elem-part2 {
+        text-align: start;
+    }
+
+    .elem-part2 h5 {
+        font-size: 23px;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .button {
+        margin-top: 4vw;
+        height: 10vh;
+    }
+
+    .page4 {
+        width: 100%;
+        min-height: 100vh;
+        padding: 1vw 6vw;
+        background-color: #EFEAE3'
+
+    }
+
+    .container {
+        width: 100%;
+        height: 80vh;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+
+    }
+
+    .container-left {
+        width: 100%;
+        height: 40%;
+        padding: 2vw 7vw;
+
+    }
+
+    .container-left h1 {
+        font-size: 7vw;
+        border-left: 3px solid #b9b9b936;
+    }
+
+    .container-left p {
+        font-size: 3vw;
+    }
+
+    .h1-diff {
+        padding-left: 5vw;
+    }
+
+    .container-right {
+        width: 100%;
+        height: 60%;
+    }
+
+    .container-right img {
+        border-radius: 20px;
+    }
+
+    .slider-container {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .slider {
+        padding: 0vw 2vw;
+
+    }
+
+    .slide {
+
+        padding: 0vw 4vw;
+        width: 280px;
+        height: 80%;
+
+    }
+
+    .slide p {
+        width: 85%;
+        font-size: 3.7vw;
+    }
+
+    .page5 {
+        width: 100%;
+        height: 90vh;
+
+    }
+
+    .footer {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        bottom: 0;
+        z-index: 9;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+    }
+
+    .footer h1 {
+        font-size: 15.5vw;
+        color: #fff;
+        position: relative;
+    }
+
+    .footer-div {
+        height: 80vh;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 1vw 5vw;
+        margin-bottom: 20vw;
+    }
+
+    .footer-left h2 {
+        font-size: 9vw;
+        font-weight: 600;
+    }
+
+    .footer-right {
+        width: 85%;
+    }
+
+    .footer-right h3 {
+        font-weight: 200;
+        margin-bottom: 4vw;
+    }
+
+    .footer-right input {
+        padding: 1.5vw;
+        font-size: 4.1vw;
+    }
+
+    .footer-btm {
+        height: 12vh;
+        padding: 0vw 2vw;
+    }
+
+    .footer-btm h3 {
+        font-size: 2.5vw;
+    }
+
+    .anim {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        display: flex;
+    }
+
+    .anime1 {
+        width: 75%;
+        height: 50vh;
+        left: -10%;
+
+    }
+
+    .anime2 {
+        width: 80%;
+        height: 60vh;
+        right: -10%;
+    }
+
+    .loader h1{
+        font-size: 10vw;
+    }
+
+}
