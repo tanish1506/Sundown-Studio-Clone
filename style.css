@@ -616,12 +616,16 @@ nav h3{
     align-items: center;
     justify-content: space-between;
     padding: 0vw 2vw;
+    cursor: pointer;
 }
 
 .footer-btm h3 {
     font-weight: 200;
     font-size: 1.2vw;
-
+}
+.footer-btm a{ 
+    color: #EFEAE3;
+    text-decoration: none;
 }
 
 .anim{
